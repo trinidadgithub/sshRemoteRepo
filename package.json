@@ -3,12 +3,15 @@
     "@babel/cli": "^7.22.10",
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "babel-cli": "^6.26.0",
     "html-linter": "^1.1.1",
-    "husky": "^8.0.3"
+    "husky": "^8.0.3",
+    "semantic-release": "^21.1.1"
   },
   "name": "@trinidadgithub/sshremoterepo",
-  "version": "1.0.1-semantic-release",
+  "version": "0.0.0-development",
   "description": "Test NPM package publish to github.com",
   "main": "index.js",
   "scripts": {
@@ -18,14 +21,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "commit": "commit",
-    "build": "rm -rf dist && babel src/ --out-dir dist --copy-files"
+    "build": "rm -rf dist && babel src/ --out-dir dist --copy-files",
+    "semantic-release": "semantic-release"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/trinidadgithub/sshRemoteRepo.git"
+    "url": "https://github.com/trinidadgithub/sshRemoteRepo.git"
   },
   "author": "trinidadgithub",
   "license": "ISC",
