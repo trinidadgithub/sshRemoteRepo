@@ -1,11 +1,3 @@
-const Button = (props) => {
-    const btnStyle = {
-        color: #fff,
-        backgroundColor: #0069d9,
-        fontSize: 14px
-    }
-    return (
-        <button style={btnStyle}>{props}</button>
-    )
-}
-export default Button;
+var tag=document.getElementById("myButton");
+function mouseOver(){tag.style.background="yellow";};
+function mouseOut(){tag.style.background="white";};

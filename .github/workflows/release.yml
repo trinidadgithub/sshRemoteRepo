@@ -21,7 +21,9 @@ jobs:
     - name: Install semantic-release extra plugins
       run: npm install --save-dev @semantic-release/changelog @semantic-release/git      
     - name: Install lint
-      run: npm install eslint 
+      run: npm install eslint html-linter
+    - name: Html Lint
+      run: npm run html-linter
     - name: Lint
       run: npm run lint-fix
     - name: Test
