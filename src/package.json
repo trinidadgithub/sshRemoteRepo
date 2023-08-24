@@ -1,6 +1,6 @@
 {
-  "name": "sshremoterepo",
-  "version": "1.0.0",
+  "name": "@trinidadgithub/sshremoterepo",
+  "version": "1.0.1",
   "description": "Test NPM package publish to github.com",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/trinidadgithub/sshRemoteRepo.git"
   },
-  "author": "trinidadm",
+  "author": "trinidadgithub",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/trinidadgithub/sshRemoteRepo/issues"
@@ -22,6 +22,6 @@
   "devDependencies": {
     "@babel/cli": "^7.22.10"
   },
-  "build": "rm -rf dist && babel src/lib --out-dir dist --copy-files",
+  "build": "rm -rf dist && babel src/lib --out-dir dist --copy-files"
 }
 
