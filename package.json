@@ -2,10 +2,11 @@
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
+    "eslint": "^8.47.0",
     "husky": "^8.0.3"
   },
   "scripts": {
     "commitlint": "commitlint --edit",
-    "lint-fix": "eslint --ext=.jsx,.js,.tsx,.ts"
+    "lint-fix": "npx eslint release.config.js"
   }
 }
