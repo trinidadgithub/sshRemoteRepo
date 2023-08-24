@@ -1,10 +1,11 @@
 {
   "name": "@trinidadgithub/sshremoterepo",
-  "version": "1.0.1",
+  "version": "1.0.1-semantic-release",
   "description": "Test NPM package publish to github.com",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "husky install"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
