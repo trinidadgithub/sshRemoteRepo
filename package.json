@@ -1,13 +1,24 @@
 {
+  "devDependencies": {
+    "@babel/cli": "^7.22.10",
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "babel-cli": "^6.26.0",
+    "html-linter": "^1.1.1",
+    "husky": "^8.0.3"
+  },
   "name": "@trinidadgithub/sshremoterepo",
   "version": "1.0.1-semantic-release",
   "description": "Test NPM package publish to github.com",
   "main": "index.js",
   "scripts": {
+    "commitlint": "commitlint --edit",
+    "lint-fix": "npx eslint release.config.js",
+    "html-linter": "html-linter --config ./html-linter.json src/*.html",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "lint-fix" : "",
-    "commit": "commit"
+    "commit": "commit",
+    "build": "rm -rf dist && babel src/ --out-dir dist --copy-files"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
@@ -22,9 +33,7 @@
     "url": "https://github.com/trinidadgithub/sshRemoteRepo/issues"
   },
   "homepage": "https://github.com/trinidadgithub/sshRemoteRepo#readme",
-  "devDependencies": {
-    "@babel/cli": "^7.22.10"
-  },
-  "build": "rm -rf dist && babel src/lib --out-dir dist --copy-files"
+  "dependencies": {
+    "babel": "^6.23.0"
+  }
 }
-
