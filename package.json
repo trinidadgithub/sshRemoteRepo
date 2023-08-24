@@ -6,6 +6,6 @@
   },
   "scripts": {
     "commitlint": "commitlint --edit",
-    "lint-fix": "commitlint --edit"
+    "lint-fix": "eslint --ext=.jsx,.js,.tsx,.ts"
   }
 }
