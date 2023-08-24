@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "lint-fix" : ""
+    "lint-fix" : "",
+    "commit": "commit"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
